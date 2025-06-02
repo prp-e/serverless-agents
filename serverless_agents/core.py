@@ -71,9 +71,7 @@ Here is the list of the tools:
         prepared_tool = self.tool_preparation(message)
         results = self.tool_calling(prepared_tool)
 
-        humanized_result = client.chat.completions.create(
-            model = self.model, 
-            messages = [
+        self.history = [
                 {
                     "role" : "system",
                     "content" : "You are a helpful assistant and you are fed with the results from a previous tool calling. You have to explain what the tool did and then explain the result to the user."
@@ -82,9 +80,17 @@ Here is the list of the tools:
                     "role" : "user",
                     "content" : f"Tool and arguments:{prepared_tool}\nResutls: {results}"
                 }
-            ],
+            ]
 
+        humanized_result = client.chat.completions.create(
+            model = self.model, 
+            messages = self.history,
             temperature = 0.5
         )
 
-        return humanized_result.choices[0].message.content
+        chatbot_result = humanized_result.choices[0].message.content
+        
+        self.history.append({"role" : "assistant", "content" : chatbot_result})
+        self.history.append({"role" : "user", "content" : f"Tool and arguments:{prepared_tool}\nResutls: {results}"})
+        
+        return 
