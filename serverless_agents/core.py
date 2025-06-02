@@ -14,3 +14,6 @@ You are a helpful assistant which has access to the following tools. Your task i
 
 Here is the list of the tools:
 '''
+
+    def tool(self, name, description, arguments):
+        pass
