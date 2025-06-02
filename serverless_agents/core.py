@@ -91,6 +91,5 @@ Here is the list of the tools:
         chatbot_result = humanized_result.choices[0].message.content
         
         self.history.append({"role" : "assistant", "content" : chatbot_result})
-        self.history.append({"role" : "user", "content" : f"Tool and arguments:{prepared_tool}\nResutls: {results}"})
 
         return chatbot_result
