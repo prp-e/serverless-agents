@@ -16,4 +16,5 @@ Here is the list of the tools:
 '''
 
     def tool(self, name, description, arguments):
-        pass
+        def decorator(func):
+            pass
