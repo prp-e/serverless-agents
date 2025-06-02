@@ -60,5 +60,7 @@ Here is the list of the tools:
         for t in self.tools:
             if t.__name__ == tool:
                 called_tool = t
+        
+        data = data.values
 
         return called_tool, data
