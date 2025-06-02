@@ -57,4 +57,8 @@ Here is the list of the tools:
 
         del data['tool']
 
-        return data
+        for t in self.tools:
+            if t.__name__ == tool:
+                called_tool = t
+
+        return called_tool, data
