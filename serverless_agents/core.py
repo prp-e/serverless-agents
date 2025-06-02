@@ -67,4 +67,24 @@ Here is the list of the tools:
         return result
     
     def chat(self, message):
-        pass
+        
+        prepared_tool = self.tool_preparation(message)
+        results = self.tool_calling(prepared_tool)
+
+        humanized_result = client.chat.completions.create(
+            model = self.model, 
+            messages = [
+                {
+                    "role" : "system",
+                    "content" : "You are a helpful assistant and you are fed with the results from a previous tool calling. You have to explain what the tool did and then explain the result to the user."
+                },
+                {
+                    "role" : "user",
+                    "content" : f"Tool and arguments:{prepared_tool}\nResutls: {results}"
+                }
+            ],
+
+            temperature = 0.5
+        )
+
+        return humanized_result.choices[0].message.content
