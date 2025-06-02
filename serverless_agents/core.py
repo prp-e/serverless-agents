@@ -62,5 +62,6 @@ Here is the list of the tools:
                 called_tool = t
         
         data = data.values
+        result = called_tool(*data)
 
-        return called_tool, data
+        return result
