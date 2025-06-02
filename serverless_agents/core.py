@@ -12,9 +12,11 @@ class Agent:
         self.model = model 
         self.system_message = '''
 You are a helpful assistant which has access to the following tools. Your task is to just turn user's prompts into the needed input for each tool based on the description provided. 
-Your output must be like the following:
+Your output MUST BE A JSON OBJECT like the following:
 
 {"tool" : TOOL_NAME, "argument1" : ARGUMENT_1, ...}
+
+Also remember, do not use markdown.
 
 Here is the list of the tools:
 '''
