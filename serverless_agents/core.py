@@ -61,7 +61,7 @@ Here is the list of the tools:
             if t.__name__ == tool:
                 called_tool = t
         
-        data = data.values
+        data = data.values()
         result = called_tool(*data)
 
         return result
