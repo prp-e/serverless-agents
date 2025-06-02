@@ -65,3 +65,6 @@ Here is the list of the tools:
         result = called_tool(*data)
 
         return result
+    
+    def chat(self, message):
+        pass
