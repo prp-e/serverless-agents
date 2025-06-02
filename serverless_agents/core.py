@@ -15,6 +15,7 @@ You are a helpful assistant which has access to the following tools. Your task i
 Here is the list of the tools:
 '''
 
-    def tool(self, name, description, arguments):
+    def tool(self, description):
         def decorator(func):
-            pass
+            tool = f"{func.__name__}: {list(func.__code__.co_varnames)} - {description}"
+            self.system_message = self.system_message + "\n-" + tool
