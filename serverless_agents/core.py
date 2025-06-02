@@ -45,3 +45,6 @@ Here is the list of the tools:
         )
 
         return result.choices[0].message.content
+    
+    def tool_calling(self, data):
+        pass
