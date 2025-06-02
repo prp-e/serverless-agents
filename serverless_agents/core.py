@@ -23,5 +23,21 @@ Here is the list of the tools:
             return func
         return decorator
     
-    def tool_calling(self):
-        pass
+    def tool_calling(self, message):
+        
+        result = client.chat.completions.create(
+            model = self.model, 
+            messages = [
+                {
+                    "role" : "system",
+                    "content" : self.system_message
+                },
+                {
+                    "role" : "user",
+                    "content" : message
+                }
+            ],
+            temperature = 0.0 
+        )
+
+        return result.choices[0].message.content
