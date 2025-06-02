@@ -18,7 +18,7 @@ Here is the list of the tools:
     def tool(self, description):
         def decorator(func):
             tool = f"{func.__name__}: {list(func.__code__.co_varnames)} - {description}"
-            self.system_message = self.system_message + "\n-" + tool
+            self.system_message = self.system_message + "\n- " + tool
 
             return func
         return decorator
