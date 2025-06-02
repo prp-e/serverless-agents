@@ -22,3 +22,6 @@ Here is the list of the tools:
 
             return func
         return decorator
+    
+    def tool_calling(self):
+        pass
