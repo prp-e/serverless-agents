@@ -3,7 +3,7 @@ import os
 from openai import OpenAI
 
 client = OpenAI(
-    base_url = os.environ['OPENAI_BASE_URL'],
+    base_url = os.environ.get('OPENAI_BASE_URL', 'https://api.openai.com/v1'),
     api_key = os.environ['OPENAI_API_KEY']
 )
 
