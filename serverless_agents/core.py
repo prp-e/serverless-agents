@@ -92,5 +92,5 @@ Here is the list of the tools:
         
         self.history.append({"role" : "assistant", "content" : chatbot_result})
         self.history.append({"role" : "user", "content" : f"Tool and arguments:{prepared_tool}\nResutls: {results}"})
-        
-        return 
+
+        return chatbot_result
