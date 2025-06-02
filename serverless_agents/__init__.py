@@ -1,0 +1,1 @@
+from serverless_agents.core import Agent
