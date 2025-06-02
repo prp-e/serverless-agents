@@ -5,3 +5,7 @@ client = OpenAI(
     base_url = os.environ['OPENAI_BASE_URL'],
     api_key = os.environ['OPENAI_API_KEY']
 )
+
+class Agent:
+    def __init__(self):
+        pass
