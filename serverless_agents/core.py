@@ -7,5 +7,10 @@ client = OpenAI(
 )
 
 class Agent:
-    def __init__(self):
-        pass
+    def __init__(self, model):
+        self.model = model 
+        self.system_message = '''
+You are a helpful assistant which has access to the following tools. Your task is to just turn user's prompts into the needed input for each tool based on the description provided. 
+
+Here is the list of the tools:
+'''
