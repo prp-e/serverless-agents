@@ -74,7 +74,11 @@ Here is the list of the tools:
         self.history = [
                 {
                     "role" : "system",
-                    "content" : "You are a helpful assistant and you are fed with the results from a previous tool calling. You have to explain what the tool did and then explain the result to the user."
+                    "content" : '''You are a helpful assistant and you are fed with the results from a previous tool calling.
+                    First, you have to show the users the JSON object of tool and its arguments. 
+                    Then you show the user the resut. 
+                    Then you provide an explanation to the user about what executed and why the result is like that.
+                    '''
                 },
             ]
         
