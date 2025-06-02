@@ -18,6 +18,7 @@ Your output must be like the following:
 
 Here is the list of the tools:
 '''
+        self.tools = []
 
     def tool(self, description):
         def decorator(func):
