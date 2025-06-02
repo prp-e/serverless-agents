@@ -76,11 +76,9 @@ Here is the list of the tools:
                     "role" : "system",
                     "content" : "You are a helpful assistant and you are fed with the results from a previous tool calling. You have to explain what the tool did and then explain the result to the user."
                 },
-                {
-                    "role" : "user",
-                    "content" : f"Tool and arguments:{prepared_tool}\nResutls: {results}"
-                }
             ]
+        
+        self.history.append({"role" : "user", "content" : f"Tool and arguments:{prepared_tool}\nResutls: {results}"})
 
         humanized_result = client.chat.completions.create(
             model = self.model, 
