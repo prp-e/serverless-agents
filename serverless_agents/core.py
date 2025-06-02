@@ -55,4 +55,6 @@ Here is the list of the tools:
         data = json.loads(data)
         tool = data['tool']
 
-        return tool
+        del data['tool']
+
+        return data
