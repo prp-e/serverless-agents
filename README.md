@@ -15,3 +15,5 @@ pip3 install git+https://github.com/prp-e/serverless-agents
 ``` 
 
 And this library will soon be added to [pypi](https://pypi.python.org) as well.
+
+## Basic environment setup
