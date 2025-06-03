@@ -40,3 +40,27 @@ agent.chat("I just want to greet Samin")
 ``` 
 
 The output of the above code will be something like this: 
+
+```markdown
+Here is the JSON object of the tool and its arguments:
+
+\```json
+{
+  "tool": "greet",
+  "name": "Samin"
+}
+\```
+
+And here are the results from the tool call:
+\```
+Hello, Samin
+\```
+
+### Explanation
+
+The tool used in this interaction is named `greet`, and it takes a single argument, `name`. In this case, the name provided was `"Samin"`.
+
+When the `greet` tool is called with the argument `"Samin"`, it generates a greeting message. The output "Hello, Samin" is a standard greeting in English that acknowledges the presence of the person named Samin.
+
+This tool is useful for creating personalized greetings, which can be used in various applications such as customer service, social media interactions, or any scenario where a friendly and personal touch is desired.
+``` 
