@@ -1,1 +1,3 @@
 # Contribution Guide
+
+## Adding features
