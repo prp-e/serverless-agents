@@ -67,6 +67,10 @@ This tool is useful for creating personalized greetings, which can be used in va
 
 This way, you can make different stuff with _agentic_ behavior. 
 
+## Important Notes
+
+- Some models may misbehave on the output structure. Specially small quantized ones. 
+
 ## Contribution 
 
 The contribution guide will be availabl as soon as possible. 
