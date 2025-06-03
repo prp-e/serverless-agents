@@ -24,3 +24,19 @@ The library needs two _environment variables_ to be set:
 * `OPENAI_API_KEY` : This is the API key you have. For providers such as OpenAI, Cloudflare (if using OpenAI compatible endpoints) or Open Router, this must be set. 
 
 ## Make a simple agent
+
+In order to make a very simple agent, you can do this: 
+
+```python
+from serverless_agents import Agent
+
+agent = Agent("gpt-4.1-nano")
+
+@agent.tool("This tool is for saying Hi to people")
+def greet(name):
+    return f"Hello, {name}"
+
+agent.chat("I just want to greet Samin")
+``` 
+
+The output of the above code will be something like this: 
