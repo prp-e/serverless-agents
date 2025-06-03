@@ -4,6 +4,8 @@ base_url = "https://text.pollinations.ai/openai"
 os.environ['OPENAI_BASE_URL'] = base_url
 os.environ['OPENAI_API_KEY'] = "pollinations-do-not-need-a-key"
 
+# Important: Always do this before the rest of the code since Agent object tries to override above environment variables.
+
 from serverless_agents import Agent
 
 
