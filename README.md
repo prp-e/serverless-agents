@@ -64,3 +64,9 @@ When the `greet` tool is called with the argument `"Samin"`, it generates a gree
 
 This tool is useful for creating personalized greetings, which can be used in various applications such as customer service, social media interactions, or any scenario where a friendly and personal touch is desired.
 ``` 
+
+This way, you can make different stuff with _agentic_ behavior. 
+
+## Contribution 
+
+The contribution guide will be availabl as soon as possible. 
