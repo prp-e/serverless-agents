@@ -17,3 +17,8 @@ pip3 install git+https://github.com/prp-e/serverless-agents
 And this library will soon be added to [pypi](https://pypi.python.org) as well.
 
 ## Basic environment setup
+
+The library needs two _environment variables_ to be set: 
+
+* `OPENAI_BASE_URL` : If not set, it'll be set on default OpenAI's API endpoint. Otherwise, it'll be what you have set. 
+* `OPENAI_API_KEY` : This is the API key you have. For providers such as OpenAI, Cloudflare (if using OpenAI compatible endpoints) or Open Router, this must be set. 
