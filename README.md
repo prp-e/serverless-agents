@@ -73,7 +73,7 @@ This way, you can make different stuff with _agentic_ behavior.
 
 ## Contribution 
 
-The contribution guide will be availabl as soon as possible. 
+The contribution guide will be available as soon as possible. 
 
 ## Donations 
 
