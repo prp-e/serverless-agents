@@ -70,3 +70,9 @@ This way, you can make different stuff with _agentic_ behavior.
 ## Contribution 
 
 The contribution guide will be availabl as soon as possible. 
+
+## Donations 
+
+### Fiat Donation 
+
+Currently there is no fiat option available (and I try my best to make it available). 
