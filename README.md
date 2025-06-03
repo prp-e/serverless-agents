@@ -76,3 +76,12 @@ The contribution guide will be availabl as soon as possible.
 ### Fiat Donation 
 
 Currently there is no fiat option available (and I try my best to make it available). 
+
+### Crypto Donation 
+
+* BTC : `bc1qtah5agu8629kj3j3jx4w6w0nj7l4srknwg8wku`
+* ETH (ETH, USDT, USDC) : `0x26abcBd0437C2F2B713D6C2d598cD4988DbacC87`
+* TON : `UQBtQ4UBf1gOnlAfkgAo-XNNOCQ_dKlVWj3xygit7oUX4uVA`
+* TRX (TRX, USDT) : `TKx8FWAozZmwDsPAYcGbNnE56mJDxJ4ZWF`
+* SOL : `8VgLEL2Y6TFWgzdeK5zCMTRN23EQ4HZaK3xsoe6Jggnc`
+* DOGE: `D7dG7Tk4C8e4K5UdPZyoU76tXZ5LkcCVm1`
