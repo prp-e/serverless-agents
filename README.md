@@ -73,7 +73,7 @@ This way, you can make different stuff with _agentic_ behavior.
 
 ## Contribution 
 
-The contribution guide will be available as soon as possible. 
+The conrtibution guide can be found [here](CONTRIBUTING.md).
 
 ## Donations 
 
