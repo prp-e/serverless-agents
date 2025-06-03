@@ -10,3 +10,6 @@ agent = Agent("openai")
 def avg(a, b, c):
     sum = a + b + c
     return sum / 3.0
+
+result = agent.chat("What is the average of 10, 13 and 20?")
+print(result)
